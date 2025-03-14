@@ -10,12 +10,11 @@ with open(data_path, 'rb') as file:
 
 # Extract feature names from the model
 try:
-    feature_names = model.feature_names_in_  # This holds the correct feature names
+    feature_names = model.feature_names_in_ 
 except AttributeError:
     print("Error: Model does not contain feature names. Retrain it with updated scikit-learn version.")
 
 def predict_email(email_vector):
-    # Convert the email vector into a DataFrame with correct feature names
     email_df = pd.DataFrame([email_vector], columns=feature_names)
     
     # Make the prediction
@@ -23,7 +22,6 @@ def predict_email(email_vector):
     return "Spam" if prediction[0] == 1 else "Ham"
 
 if __name__ == "__main__":
-    # Generate a random email vector with correct feature size
     example_email_vector = np.random.randint(0, 10, size=len(feature_names))
     
     print("Prediction:", predict_email(example_email_vector))
