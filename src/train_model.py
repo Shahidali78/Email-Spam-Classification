@@ -10,8 +10,8 @@ model_path = "models/spam_classifier.pkl"
 
 def load_data():
     df = pd.read_csv(data_path)
-    X = df.iloc[:, 1:-1]  # Exclude first column and last column (Prediction)
-    y = df.iloc[:, -1]  # Last column (Prediction)
+    X = df.iloc[:, 1:-1]  
+    y = df.iloc[:, -1]  
     return X, y
 
 def train_model():
