@@ -12,15 +12,11 @@ Email-Spam-Classification/
 │   ├── exploratory_data_analysis.ipynb  # Jupyter Notebook for EDA
 │── src/
 │   ├── __init__.py
-│   ├── train_model.py               # Training script
-│   ├── evaluate_model.py            # Model evaluation
-│   ├── predict.py                   # Prediction function
+│   ├── train_model.py               
+│   ├── evaluate_model.py            
+│   ├── predict.py                  
 │── models/
-│   ├── spam_classifier.pkl          # Trained model
-│── requirements.txt                 # Python dependencies
-│── README.md                        # Documentation
-│── .gitignore                       # Ignore unnecessary files
-```
-
----
+│   ├── spam_classifier.pkl          lt                
+│── README.md                       
+                      #
 
